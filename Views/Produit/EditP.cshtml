@@ -1,0 +1,59 @@
+﻿@model Produit
+
+<form method="post" asp-action="EditP">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Edit Produit</h2>
+			<hr />
+		</div>
+		<div asp-validation-summary="All"></div>
+		<div class="mb-3">
+			<label asp-for="NameP"></label>
+			<input asp-for="NameP" class="form-control" />
+			<span asp-validation-for="NameP" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Reference"></label>
+			<input asp-for="Reference" class="form-control" />
+			<span asp-validation-for="Reference" class="text-danger"></span>
+		</div>
+<div class="mb-3">
+			<label asp-for="QTT"></label>
+			<input asp-for="QTT" class="form-control" />
+			<span asp-validation-for="QTT" class="text-danger"></span>
+	</div>
+	<div class="mb-3">
+			<label asp-for="Prix"></label>
+			<input asp-for="Prix" class="form-control" />
+			<span asp-validation-for="Prix" class="text-danger"></span>
+	</div>
+	<div class="mb-3">
+			<label asp-for="Warehouse_Name"></label>
+			<input asp-for="Warehouse_Name" class="form-control" />
+		<span asp-validation-for="Warehouse_Name" class="text-danger"></span>
+	</div>
+	<div class="mb-3">
+			<label asp-for="Fournisseur_Name"></label>
+
+
+			<input asp-for="Fournisseur_Name" class="form-control" />
+
+
+			<span asp-validation-for="Fournisseur_Name" class="text-danger"></span>
+	</div>
+
+
+		<button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+		<a asp-controller="Produit" asp-action="IndexP" class="btn btn-secondary" style="width:150px">
+			Back to List
+		</a>
+	</div>
+</div>
+
+</form>
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+}

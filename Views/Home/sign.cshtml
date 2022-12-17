@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "sign Page";
+    Layout = "~/Views/shared/_LayoutPage.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+      REGISTER ACCOUNT
+        
+    </title>
+    
+</head>
+
+				</div>
+				<form method="post" action="/Login/Verify_Credantials" style="font-size: 20px; background-color: transparent;max-width: 40%;margin: 50px 0px 0px 400px;" align="Center">
+
+					
+					<br>
+					<img src="https://cdn4.iconfinder.com/data/icons/professions-1-2/151/29-512.png" style="width: 200px; height: 200px;">
+					<br>
+					
+					<br>
+					<input type="text" id="nom" name="nom" style="font-size: 20px;background-color: transparent; color: #34495e;width: 70%;height: 30px; border-top: none;border-right: none; border-left:none; border-color: #54a0ff;" placeholder="Nom">
+	                 <br>
+	
+	<br>
+					<input type="text" id="Prenom" name="Prenom" style="font-size: 20px;background-color: transparent; color: #34495e;width: 70%;height: 30px; border-top: none;border-right: none; border-left:none; border-color: #54a0ff;" placeholder="Prenom">
+					<br>
+					<br>
+					
+					
+					<input type="text" id="email" name="email" style="font-size: 20px;background-color: transparent; color: #34495e;width: 70%;height: 30px; border-top: none;border-right: none; border-left:none; border-color: #54a0ff;" placeholder="email">
+					<br>
+					<br>
+					
+					
+					<input type="password" id="Password" name="Password" style="font-size: 20px;background-color: transparent; color: #34495e;width: 70%;height: 30px; border-top: none;border-right: none; border-left:none; border-color: #54a0ff;" placeholder="Password">
+					<br>
+					<br>
+					
+					
+					<input type="password" id="Password" name="ConfirmPassword" style="font-size: 20px;background-color: transparent; color: #34495e;width: 70%;height: 30px; border-top: none;border-right: none; border-left:none; border-color: #54a0ff;" placeholder="ConfirmPassword">
+					<br>
+					<br>
+					<p align="left" style="margin-left: 80px;">
+
+						<button style="background-color: #FFD700;color :white; font-size: 15px; width: 100px;height= 40px; border: none; ">SignUp</button>
+					</p>
+					<br>
+					<div class="mt-4">
+						<div class="d-flex justify-content-center links">
+							<strong style="color:#fff">
+								Already have an account ? <a asp-area="" asp-controller="Login" asp-action="Index" class="ml-2" style="color:#FF6347;"> Login</a>
+							</strong>
+						</div>
+
+					</div>
+					<br>
+					<br>
+
+				</form>
+
+
+				<style>
+
+
+					body {
+						height: 100vh;
+						background-image: url(https://textexpander.com/wp-content/uploads/2020/07/te-body-sales-technology-stack-6.png);
+						background-position: center;
+						background-size: cover;
+						background-repeat: no-repeat;
+						backdrop-filter: opacity(80%);
+					}
+				</style>
+
+
+</html>
+
+
+

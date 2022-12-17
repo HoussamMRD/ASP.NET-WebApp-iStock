@@ -1,0 +1,56 @@
+﻿@model Fournisseur
+
+<form method="post" asp-action="DeleteFP">
+	<input asp-for="Id" hidden />
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Delete Fournisseur</h2>
+			<hr />
+		</div>
+		<div asp-validation-summary="All"></div>
+		<div class="mb-3">
+			<label asp-for="Nom"></label>
+			<input asp-for="Nom" disabled class="form-control" />
+			<span asp-validation-for="Nom"   class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Prenom"></label>
+			<input asp-for="Prenom" disabled class="form-control" />
+			<span asp-validation-for="Prenom" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Email"></label>
+			<input asp-for="Email" disabled class="form-control" />
+			<span asp-validation-for="Email" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Telephone"></label>
+			<input asp-for="Telephone" disabled class="form-control" />
+			<span asp-validation-for="Telephone" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="QTT_Entre"></label>
+			<input asp-for="QTT_Entre" disabled class="form-control" />
+			<span asp-validation-for="QTT_Entre" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Prix_Achat"></label>
+			<input asp-for="Prix_Achat" disabled class="form-control" />
+			<span asp-validation-for="Prix_Achat" class="text-danger"></span>
+		</div>
+
+
+		<button type="submit" class="btn btn-danger" style="width:150px">Delete</button>
+		<a asp-controller="Fournisseur" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			Back to List
+		</a>
+	</div>
+	</div>
+
+</form>
+
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+}
