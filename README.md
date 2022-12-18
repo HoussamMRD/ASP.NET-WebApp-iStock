@@ -2,10 +2,10 @@
 dot net istock
 
 
-#Build Web Application with ASP.NET Core, Entity Framework Core in a Real-Word Example #
+# Build Web Application with ASP.NET Core, Entity Framework Core in a Real-Word Example 
 This article explains aspnetrun basic realworld repository of github. This series of articles continues as per difficulty levels. This article intended for the beginners of asp.net core. You can follow the other articles at the end of the page.
 
-#Introduction
+# Introduction
 In this article we will show how to build web application on ASP.NET Core Web application using Entity Framework and Razor Pages.
 
 By the end of the article, we will have an web application which implemented mini e-commerce pages over Product,Category and Contact entities.
@@ -13,7 +13,7 @@ By the end of the article, we will have an web application which implemented min
 Take a look at the final application.
 
 
-#You’ll learn how to:
+# You’ll learn how to:
 
 Create an ASP.NET Core Web Application Project
 Work with a Database using Entity Framework Core
@@ -25,7 +25,7 @@ At the end, you’ll have a working web application running on your local machin
 Source Code
 Get the Source Code from AspnetRunBasic RealWorld Github — Clone or fork this repository, if you like don’t forget the star :) If you find or ask anything you can directly open issue on repository.
 
-#Prerequisites
+# Prerequisites
 Install the .NET Core 3.x or above SDK
 Install Visual Studio 2019 v16.x or above
 Microsoft Sql Server Express (its comes with Visual Studio)
@@ -36,19 +36,8 @@ Check for the previous article which explained base of this repository.
 
 Based on that we were created a basic infrastructure of crud operations on asp.net core web application from previous post. Over this repository, we are going to create a basic real-world web application with using ASP.Net Core best practices.
 
-Start the Web Application
-We are going to build our application on top of the basic crud implementation of this repository. So lets download — clone or fork this repository and open the solution.
 
-At this point, we have a CRUD implemented Pages project. Run the project (Crtl + F5) to see everything is OK.
-
-Rename Your Application
-At this point, you can rename your application name by changing Solution and Project Names.
-
-Select Solution file, Right Click -> Rename -> Your New Project Name..
-
-Select Project file, Right Click -> Rename -> Your New Project Name..
-
-Project Structure
+# Project Structure
 Examine the project files
 Here’s an overview of the main project folders and files that you will work with in our operations.
 
@@ -77,21 +66,18 @@ Contact page which send Message to company, include post operations
 Subscribe e-mail list
 Set Entities
 Go to Entities folder into your project. This will be the tables of your project. In this post, we will use the Code First Approach of the Entity Framework Core. That’s why we write the entity classes at first.
-
 Add or Edit Product, Category and Contact class into Entities folder.
 
 Its not meaningfully when e-commerce application authorize Product page but we will use an example of authorization. You can change your authorized page as per your design.
 
-#Adapt UI Pages with Bootstrap 4
+# Adapt UI Pages with Bootstrap 4
 Since here we developed Product Data and Business Layer and also apply ASP.NET Identity module in our project. So in presentation layer we should apply some theme and layouts for listing this categories and its products on the page.
-
 So the next steps should cover below parts;
 
-#Bootstrap 4 Theme Implementation
+# Bootstrap 4 Theme Implementation
 ASP.NET Core Razor Tools — View Components, partial Views, Tag Helpers, Model Bindings and Validations, Razor Sections etc..
 For the rest of the application, I recommend to follow aspnetrun e-books in order to develop step by step a real-world application in every level of asp.net core.
 
-#Conclusion
+# Conclusion
 This article demonstrate that how to build a basic e-commerce web application in a one solution and one project with ASP.NET Core & Entity Framework Core which used main components; razor pages, middlewares, dependency injection, configuration, logging. Provided that to create websites with minimum implementation of asp.net core based on HTML5, CSS, and JavaScript. We created a sample basic e-commerce product record management system and performed post operations on it.
-
 For the rest of the application, I recommend to follow aspnetrun e-books in order to develop step by step a real-world application in every level of asp.net core.
