@@ -2,7 +2,7 @@
 
 
 
-# Build full stack web app with ASP.NET Core, Entity Framework Core , HTML, CSS, JavaScript, and C#  in a Real-Word Example 
+# Build full stack web app with ASP.NET Core, Entity Framework Core , HTML, CSS, JavaScript, and C#  
 This article explains aspnetrun basic realworld repository of github. This series of articles continues as per difficulty levels. This article intended for the beginners of asp.net core. You can follow the other articles at the end of the page.
 
 # Introduction
